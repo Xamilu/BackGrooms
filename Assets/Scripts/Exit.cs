@@ -25,8 +25,6 @@ public void closeDoor() {
     door.DOKill();
     door.DOLocalRotate(closedRotation, 1);
 }
-// detecter si le joueur est a coté de la porte
-// detecter si le joueur touche la sortie
 
 // camera.main.transform.position = position de ma caméra
 
@@ -49,7 +47,6 @@ public void closeDoor() {
             if(isNear) {
                 isOpen = true;
                 openDoor();
-                
             }
         }
     }
