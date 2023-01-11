@@ -5,9 +5,18 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Playground.unity
     guid: 707acc8dffb72b144bb1ffbe1c965f3d
+  - enabled: 0
+    path: Assets/Scenes/test.unity
+    guid: 7f3e4530d0fde4853ac2dafb370dcd91
+  - enabled: 1
+    path: Assets/Scenes/end_menu.unity
+    guid: 80d297462927585439a2ecfac9c1a0a7
+  - enabled: 1
+    path: Assets/Scenes/labyrinthe.unity
+    guid: 242337838fefe7a4883b28baaac19b70
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 9e7be553448fa2546aea5752021cbcf7,
       type: 2}
