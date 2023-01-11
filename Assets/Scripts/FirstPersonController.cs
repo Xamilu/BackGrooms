@@ -3,7 +3,7 @@
 using UnityEngine.InputSystem;
 #endif
 using UnityEngine.Rendering;
-using UnityEngine.Rendering.weight;
+using UnityEngine.Rendering.Universal;
 
 namespace StarterAssets
 {
