@@ -177,6 +177,31 @@
                 "type": "UnityEngine.ProBuilder.Shapes.Shape, Unity.ProBuilder, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
                 "key": "ShapeBuilder.Cube",
                 "value": "{}"
+            },
+            {
+                "type": "UnityEngine.ProBuilder.Shapes.Shape, Unity.ProBuilder, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                "key": "ShapeBuilder.Plane",
+                "value": "{}"
+            },
+            {
+                "type": "UnityEngine.ProBuilder.Shapes.Shape, Unity.ProBuilder, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                "key": "ShapeBuilder.Cylinder",
+                "value": "{}"
+            },
+            {
+                "type": "UnityEngine.ProBuilder.Shapes.Shape, Unity.ProBuilder, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                "key": "ShapeBuilder.Pipe",
+                "value": "{}"
+            },
+            {
+                "type": "UnityEngine.ProBuilder.Shapes.Shape, Unity.ProBuilder, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                "key": "ShapeBuilder.Cone",
+                "value": "{}"
+            },
+            {
+                "type": "UnityEngine.ProBuilder.Shapes.Shape, Unity.ProBuilder, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                "key": "ShapeBuilder.Sphere",
+                "value": "{}"
             }
         ]
     }
