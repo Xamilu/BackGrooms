@@ -39,7 +39,7 @@ public void closeDoor() {
     void Update()
     {
         bool isNear = Vector3.Distance(transform.position, Camera.main.transform.position) < OpenDistance;
-        bool youWin = Camera.main.transform.position.z > 0.97 && Camera.main.transform.position.z < 1.74;
+        bool youWin = Camera.main.transform.position.z > 83 && Camera.main.transform.position.z < 84.6;
         if(youWin) {
             SceneManager.LoadScene(2);
         }
