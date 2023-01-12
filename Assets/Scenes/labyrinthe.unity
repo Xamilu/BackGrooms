@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731704, g: 0.13414727, b: 0.121078536, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731689, g: 0.13414702, b: 0.1210784, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -87330,7 +87330,7 @@ MonoBehaviour:
   m_IsGlobal: 1
   priority: 0
   blendDistance: 0
-  weight: 1
+  weight: 0
   sharedProfile: {fileID: 11400000, guid: 8f2d859de1abc1a478114be3a0eac4de, type: 2}
 --- !u!4 &1916298550
 Transform:
@@ -96921,6 +96921,7 @@ MonoBehaviour:
   closedRotation: {x: 0, y: 0, z: 0}
   openRotation: {x: 0, y: 130, z: 0}
   OpenDistance: 3
+  WinDistance: 0
 --- !u!64 &2087777446
 MeshCollider:
   m_ObjectHideFlags: 0
