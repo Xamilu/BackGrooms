@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.2257134, b: 0.30692226, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -464,7 +464,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: VICTOIRE
+  m_text: YOU FOUND THE EXIT
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 308cfbd6882770c4fbeb65aaed12ac42, type: 2}
   m_sharedMaterial: {fileID: 3562554518988197278, guid: 308cfbd6882770c4fbeb65aaed12ac42,
@@ -715,7 +715,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: QUITTER
+  m_text: EXIT
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 308cfbd6882770c4fbeb65aaed12ac42, type: 2}
   m_sharedMaterial: {fileID: 3562554518988197278, guid: 308cfbd6882770c4fbeb65aaed12ac42,
@@ -1109,7 +1109,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: REJOUER
+  m_text: TRY AGAIN
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 308cfbd6882770c4fbeb65aaed12ac42, type: 2}
   m_sharedMaterial: {fileID: 3562554518988197278, guid: 308cfbd6882770c4fbeb65aaed12ac42,
