@@ -22,7 +22,7 @@ public class EnemyFollow : MonoBehaviour
         bool youLoose = Vector3.Distance(transform.position, Camera.main.transform.position) < 2;
         enemy.SetDestination(player.position);
         if(youLoose) {
-            SceneManager.LoadScene(3);
+            SceneManager.LoadScene(4);
         }
     }
 }
