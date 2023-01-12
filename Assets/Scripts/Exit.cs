@@ -15,6 +15,8 @@ private Vector3 closedRotation;
 private Vector3 openRotation;
 [SerializeField]
 private float OpenDistance;
+[SerializeField]
+private float WinDistance;
 private bool isOpen = false;
 
 public void openDoor() {
@@ -39,9 +41,9 @@ public void closeDoor() {
     void Update()
     {
         bool isNear = Vector3.Distance(transform.position, Camera.main.transform.position) < OpenDistance;
-        bool youWin = Camera.main.transform.position.z > 83 && Camera.main.transform.position.z < 84.6;
+        bool youWin = Vector3.Distance(transform.position, Camera.main.transform.position) < WinDistance;
         if(youWin) {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(3);
         }
         if(isOpen) {
             if(!isNear) {
@@ -56,3 +58,5 @@ public void closeDoor() {
         }
     }
 }
+
+
