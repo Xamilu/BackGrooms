@@ -17,12 +17,12 @@ private float OpenDistance;
 private bool isOpen = false;
 
 public void openDoor() {
-    door.DOKill();
+    // door.DOKill();
     door.DOLocalRotate(openRotation, 1);
 }
 
 public void closeDoor() {
-    door.DOKill();
+    // door.DOKill();
     door.DOLocalRotate(closedRotation, 1);
 }
 
@@ -38,6 +38,10 @@ public void closeDoor() {
     void Update()
     {
         bool isNear = Vector3.Distance(transform.position, Camera.main.transform.position) < OpenDistance;
+        bool youWin = Camera.main.transform.position.z > 0.97 && Camera.main.transform.position.z < 1.74;
+        if(youWin) {
+            SceneManager.LoadScene(2);
+        }
         if(isOpen) {
             if(!isNear) {
                 isOpen = false;
