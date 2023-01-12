@@ -6,8 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Playground.unity
-    guid: 707acc8dffb72b144bb1ffbe1c965f3d
+    path: Assets/Scenes/Start_menu.unity
+    guid: cc08cce3f1303a54cb7a09b3a0f6469d
+  - enabled: 1
+    path: Assets/Scenes/labyrinthe.unity
+    guid: 242337838fefe7a4883b28baaac19b70
+  - enabled: 1
+    path: Assets/Scenes/end_menu.unity
+    guid: 80d297462927585439a2ecfac9c1a0a7
+  - enabled: 1
+    path: Assets/Scenes/dead_scene.unity
+    guid: 1217d03d1b034a5428d20d5e1b4b81ad
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 9e7be553448fa2546aea5752021cbcf7,
       type: 2}
