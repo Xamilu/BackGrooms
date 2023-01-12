@@ -2,6 +2,8 @@
 #if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
 using UnityEngine.InputSystem;
 #endif
+using UnityEngine.Rendering;
+using UnityEngine.Rendering.Universal;
 
 namespace StarterAssets
 {
@@ -22,6 +24,9 @@ namespace StarterAssets
 		public float SpeedChangeRate = 10.0f;
 
 		[Space(10)]
+        public Volume Sprintvolume;
+
+		[Space(10)]
 		[Tooltip("The height the player can jump")]
 		public float JumpHeight = 1.2f;
 		[Tooltip("The character uses its own gravity value. The engine default is -9.81f")]
@@ -32,6 +37,8 @@ namespace StarterAssets
 		public float JumpTimeout = 0.1f;
 		[Tooltip("Time required to pass before entering the fall state. Useful for walking down stairs")]
 		public float FallTimeout = 0.15f;
+
+
 
 		[Header("Player Grounded")]
 		[Tooltip("If the character is grounded or not. Not part of the CharacterController built in grounded check")]
@@ -155,6 +162,13 @@ namespace StarterAssets
 		{
 			// set target speed based on move speed, sprint speed and if sprint is pressed
 			float targetSpeed = _input.sprint ? SprintSpeed : MoveSpeed;
+			if (_input.sprint) {
+                Sprintvolume.weight += 0.2f * Time.deltaTime;
+            }
+            else {
+                Sprintvolume.weight -= 0.4f * Time.deltaTime;
+            }
+
 
 			// a simplistic acceleration and deceleration designed to be easy to remove, replace, or iterate upon
 

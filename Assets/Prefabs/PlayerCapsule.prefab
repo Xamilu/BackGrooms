@@ -82,7 +82,7 @@ MonoBehaviour:
   GroundLayers:
     serializedVersion: 2
     m_Bits: 513
-  CinemachineCameraTarget: {fileID: 0}
+  CinemachineCameraTarget: {fileID: 7026290643559878201}
   TopClamp: 89
   BottomClamp: -89
 --- !u!114 &1978471637655604388
@@ -374,6 +374,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c489a8547f4d9e4387da15a4ff82c81, type: 3}
+--- !u!1 &7026290643559878201 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8762286023885395077, guid: 9c489a8547f4d9e4387da15a4ff82c81,
+    type: 3}
+  m_PrefabInstance: {fileID: 1737125755856788156}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7026290643559878598 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8762286023885395322, guid: 9c489a8547f4d9e4387da15a4ff82c81,
