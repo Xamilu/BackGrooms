@@ -166,13 +166,13 @@ namespace StarterAssets
 			// set target speed based on move speed, sprint speed and if sprint is pressed
 			float targetSpeed = _input.sprint ? SprintSpeed : MoveSpeed;
 			if (_input.sprint) {
-                Sprintvolume.weight += 0.5f * Time.deltaTime;
-				Sprintaudio.volume += 0.5f * Time.deltaTime;
+                Sprintvolume.weight += 0.7f * Time.deltaTime;
+				Sprintaudio.volume += 0.7f * Time.deltaTime;
 
             }
             else {
-                Sprintvolume.weight -= 0.7f * Time.deltaTime;
-				Sprintaudio.volume -= 0.7f * Time.deltaTime;
+                Sprintvolume.weight -= 0.9f * Time.deltaTime;
+				Sprintaudio.volume -= 0.9f * Time.deltaTime;
 
             }
 
