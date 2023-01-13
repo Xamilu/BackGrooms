@@ -30,18 +30,13 @@ public class EnemyFollow : MonoBehaviour
         {
             return;
         }
-        bool youLoose = Vector3.Distance(transform.position, Camera.main.transform.position) < 3;
+        bool youLoose = Vector3.Distance(transform.position, Camera.main.transform.position) < 2;
         enemy.SetDestination(player.position);
         if(youLoose) {
             Loose = true;
-            Invoke(nameof(GameOver),1);
-            Screamer.Play();
+            SceneManager.LoadScene(4);
         }
 
-    }
-    void GameOver()
-    {
-        SceneManager.LoadScene(4);
     }
 }
 
