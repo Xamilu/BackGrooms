@@ -5,11 +5,17 @@ using UnityEngine.AI;
 using DG.Tweening;
 using UnityEngine.SceneManagement;
 
+
+
 public class EnemyFollow : MonoBehaviour
 {
     public NavMeshAgent enemy;
     public Transform player;
+    public AudioSource Screamer;
+
     // Start is called before the first frame update
+    private bool Loose = false;
+
     
     void Start()
     {
@@ -19,11 +25,23 @@ public class EnemyFollow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        bool youLoose = Vector3.Distance(transform.position, Camera.main.transform.position) < 2;
+        enemy.SetDestination(player.position);
+       if (Loose)
+        {
+            return;
+        }
+        bool youLoose = Vector3.Distance(transform.position, Camera.main.transform.position) < 3;
         enemy.SetDestination(player.position);
         if(youLoose) {
-            SceneManager.LoadScene(4);
+            Loose = true;
+            Invoke(nameof(GameOver),2);
+            Screamer.Play();
         }
+
+    }
+    void GameOver()
+    {
+        SceneManager.LoadScene(4);
     }
 }
 

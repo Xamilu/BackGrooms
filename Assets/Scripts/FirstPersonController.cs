@@ -27,6 +27,9 @@ namespace StarterAssets
         public Volume Sprintvolume;
 
 		[Space(10)]
+        public AudioSource Sprintaudio;
+
+		[Space(10)]
 		[Tooltip("The height the player can jump")]
 		public float JumpHeight = 1.2f;
 		[Tooltip("The character uses its own gravity value. The engine default is -9.81f")]
@@ -163,10 +166,14 @@ namespace StarterAssets
 			// set target speed based on move speed, sprint speed and if sprint is pressed
 			float targetSpeed = _input.sprint ? SprintSpeed : MoveSpeed;
 			if (_input.sprint) {
-                Sprintvolume.weight += 0.2f * Time.deltaTime;
+                Sprintvolume.weight += 0.5f * Time.deltaTime;
+				Sprintaudio.volume += 0.5f * Time.deltaTime;
+
             }
             else {
-                Sprintvolume.weight -= 0.4f * Time.deltaTime;
+                Sprintvolume.weight -= 0.7f * Time.deltaTime;
+				Sprintaudio.volume -= 0.7f * Time.deltaTime;
+
             }
 
 
