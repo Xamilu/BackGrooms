@@ -13,8 +13,9 @@ public class EnemyFollow : MonoBehaviour
     public Transform player;
     public AudioSource Screamer;
 
+
     // Start is called before the first frame update
-    private bool Loose = false;
+    private bool Screaming = false;
 
     
     void Start()
@@ -26,17 +27,19 @@ public class EnemyFollow : MonoBehaviour
     void Update()
     {
         enemy.SetDestination(player.position);
-       if (Loose)
-        {
-            return;
+
+        if(Vector3.Distance(transform.position, Camera.main.transform.position) < 8 && !Screaming){
+            Screaming = true;
+            enemy.speed *= 2;
+            Screamer.Play();
         }
+
         bool youLoose = Vector3.Distance(transform.position, Camera.main.transform.position) < 2;
-        enemy.SetDestination(player.position);
         if(youLoose) {
-            Loose = true;
             SceneManager.LoadScene(4);
         }
 
     }
+
 }
 
