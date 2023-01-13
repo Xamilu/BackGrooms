@@ -34,7 +34,7 @@ public class EnemyFollow : MonoBehaviour
         enemy.SetDestination(player.position);
         if(youLoose) {
             Loose = true;
-            Invoke(nameof(GameOver),2);
+            Invoke(nameof(GameOver),1);
             Screamer.Play();
         }
 
